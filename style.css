@@ -1,0 +1,15 @@
+.nav-link {
+    transition: background .175s ease-in-out;
+}
+
+.nav-link > svg > path {
+    transition: fill .175s ease-in-out;
+}
+
+.selected-nav {
+    background: white!important;
+}
+
+.selected-nav > svg > path{
+    fill: black;
+}
