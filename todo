@@ -1,0 +1,109 @@
+--INDICATORS-- {
+
+        Extra/Reminder      Not certain
+        >                   [?]
+
+        Connection          
+        + subject -> title  
+
+        Description         Instructions
+        => {...}            => {1. 2. 3.}
+
+}
+<----------------------------------------->
+
+--TODAY-- {
+    Check if svg div has to be h-full so I can check children height properly
+    Redo responsive padding logic
+    Redo aside after inspiration
+    Make page content in aside
+}
+
+
+--PAGES-- {
+
+    Subjects:
+          Something interactive
+          
+          Skills
+            > Programming Languages
+            > Frameworks
+            > Templates
+            > Software
+            > Svg
+            > Animations
+              >CSS
+              >JS
+              >JS LIBRARY
+              >SVG
+
+          Timeline
+            > Date bulletpoints => {
+                Clean visual connection between the bulletpoints
+              }
+            > Development history
+            > Project history
+
+          Contact
+            > Working contact form
+              + JS -> Contact form
+}
+
+
+--UI-- {
+
+    Navbar
+          > Add correct svg
+
+    Aside bar
+        > Social media links
+        > Site content => {
+            Same links as nav
+             + JS -> Redo section switcher 
+            Animation
+             + JS -> Site content animation
+        } 
+        
+    Remake portrait svg
+        > Re-do svg
+          > New path values
+          > New animation
+        > Get own picture
+          
+    Styling
+        > Add padding to sections with use of javascript if needed
+        > Make everything responsive
+        > Animated elements 
+          + JS -> Element animation
+
+}
+
+--JS-- {
+
+    Redo section switcher => {
+        > Add mobile scrolling
+    }
+
+    Site content animation => {
+        1. Decide to use popover, popup or something else
+    }
+
+    Element animation => {
+
+    }
+
+    Contact form => {
+
+    }
+
+}
+
+--FINAL-- {
+    
+    Install Tailwind CLI
+
+    Check if svg is optimaziable
+
+    Compress images
+
+}

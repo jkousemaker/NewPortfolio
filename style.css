@@ -13,3 +13,11 @@
 .selected-nav > svg > path{
     fill: black;
 }
+
+footer {
+    transition: height .5s ease-out;
+}
+
+footer.disabled {
+    height: 0;
+}
