@@ -19,7 +19,7 @@ window.addEventListener('touchstart', (event) => {
 window.addEventListener('touchend', (event) => {
     touchendY = event.changedTouches[0].clientY;
     const swipedDistance = touchendY - touchstartY;
-    const minSwipeDistance = 50;
+    const minSwipeDistance = 1;
     
     // Check swipe direction and trigger handleSwitch function
     if (swipedDistance < -minSwipeDistance) handleSwitch("down");
