@@ -79,7 +79,7 @@
 --JS-- {
 
     Redo section switcher => {
-        > Add scroll and swipe animation with amount needed to go to next section
+        > Find a way around mobile reloading when swiping down
         > Add code to nav bar
           > Animate nav bar
     }
