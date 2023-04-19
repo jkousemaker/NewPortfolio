@@ -68,6 +68,7 @@
         > Get own picture
           
     Styling
+        > Fix Viewport problems
         > Make everything responsive
         > Animated elements 
           + JS -> Element animation
@@ -79,7 +80,6 @@
 --JS-- {
 
     Redo section switcher => {
-        > Find a way around mobile reloading when swiping down
         > Add code to nav bar
           > Animate nav bar
     }
