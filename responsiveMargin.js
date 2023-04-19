@@ -10,14 +10,14 @@ function update() {
   // Check if the position property of the computed style is set to "fixed"
   if (asideStyle.position === "fixed") {
     // Set the padding top and bottom of the aside element to its height
-    aside.style.paddingTop = header.offsetHeight + "px";
-    aside.style.paddingBottom = bottom.offsetHeight + "px";
-    main.style.paddingInline = aside.offsetWidth + "px";
+    aside.style.marginTop = header.offsetHeight + "px";
+    aside.style.marginBottom = bottom.offsetHeight + "px";
+    main.style.marginInline = aside.offsetWidth + "px";
   } else {
     // Reset the padding top and bottom of the aside element
-    aside.style.paddingTop = 0;
-    aside.style.paddingBottom = 0;
-    main.style.paddingInline = '';
+    aside.style.marginTop = 0;
+    aside.style.marginBottom = 0;
+    main.style.marginInline = '';
   }
 }
 
