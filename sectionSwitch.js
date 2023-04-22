@@ -35,14 +35,20 @@ function handleSwitch(direction) {
     let nextSectionId;
     let nextSectionNumber;
 
+    let currentDiv = currentSection;
+
+    if(document.querySelector("#"+currentSectionId+" > .overflow-y-auto")) {
+        currentDiv = document.querySelector("#"+currentSectionId+" > .overflow-y-auto");
+    }
+
     let completedScroll = false;
     
     //Checks if element has been scrolled all the way and sets next section number based on direction of scroll
-    if (direction == "up" && currentSection.scrollTop === 0){
+    if (direction == "up" && currentDiv.scrollTop === 0){
         nextSectionNumber = parseInt(currentSectionId.match(/(\d+)/)[0]) - 1;
         completedScroll = true;
     }
-    else if (direction == "down" && currentSection.scrollTop + currentSection.clientHeight >= currentSection.scrollHeight){
+    else if (direction == "down" && currentDiv.scrollTop + currentDiv.clientHeight >= currentDiv.scrollHeight){
         nextSectionNumber = parseInt(currentSectionId.match(/(\d+)/)[0]) + 1;
         completedScroll = true;
     }

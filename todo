@@ -13,7 +13,7 @@
 <----------------------------------------->
 
 --TODAY-- {
-    1. find new method for 
+    2. Find some pseudo way to make timelines clickable using checkbox
 }
 
 
@@ -50,16 +50,18 @@
 --UI-- {
 
     Navbar
-          > Add correct svg
+        > Add correct svg
+        > Add burger menu
+          > Theme switcher with daisy ui
+          > Social Medias on mobile
+          > Site Content
 
     Aside bar
         > Social media links
-        > Site content => {
-            Same links as nav
-             + JS -> Redo section switcher 
-            Animation
-             + JS -> Site content animation
-        } 
+        > Hidden on mobile
+        
+    Footer, Navbar
+        > Add backdrop blur after remake of aside and navbar
         
     Remake portrait svg
         > Re-do svg
@@ -68,20 +70,26 @@
         > Get own picture
           
     Styling
+        > Add color to everything with daisyUI after installing CLI
         > Fix Viewport problems
         > Make everything responsive
         > Animated elements 
           + JS -> Element animation
         > Hide scrollbar on overflow sections or make it pretty
-        >improve anime.js animations in sectionswitch.js
+        > improve anime.js animations in sectionswitch.js
+        > Add focus styling
 
 }
 
 --JS-- {
 
     Redo section switcher => {
+        > Add horizontal option for contact me
+          > When user clicks on contact section, contact section switches horizontally
+          > Disable scrolling/swiping on mobile
         > Add code to nav bar
           > Animate nav bar
+        > Fix reloading for android & ios
     }
 
     Site content animation => {
@@ -89,7 +97,11 @@
     }
 
     Element animation => {
+      https://www.youtube.com/watch?v=T33NN_pPeNI&ab_channel=BeyondFireship
+    }
 
+    Loading overlay => {
+        Add solid color overlay for when responsiveMargin is loading and everything else
     }
 
     Contact form => {
