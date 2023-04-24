@@ -35,9 +35,6 @@
               >SVG
 
           Timeline
-            > Date bulletpoints => {
-                Clean visual connection between the bulletpoints
-              }
             > Development history
             > Project history
 
@@ -49,7 +46,7 @@
 
 --UI-- {
 
-    Navbar
+    Topbar
         > Add correct svg
         > Add burger menu
           > Theme switcher with daisy ui
@@ -59,9 +56,14 @@
     Aside bar
         > Social media links
         > Hidden on mobile
+        > Put in main with height 100% and put margin right on section container to width of Aside bar
+        > No burgerbutton
         
-    Footer, Navbar
+    Footer, Topbar
         > Add backdrop blur after remake of aside and navbar
+    
+    Footer > navbar
+        > add button to show sections https://www.youtube.com/watch?v=GSPUUN4nDGE&ab_channel=Hyperplexed
         
     Remake portrait svg
         > Re-do svg
