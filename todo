@@ -12,14 +12,11 @@
 }
 <----------------------------------------->
 
---TODAY-- {
-    2. Find some pseudo way to make timelines clickable using checkbox
-}
-
 
 --PAGES-- {
 
     Subjects:
+
           Something interactive
           
           Skills
@@ -34,10 +31,6 @@
               >JS LIBRARY
               >SVG
 
-          Timeline
-            > Development history
-            > Project history
-
           Contact
             > Working contact form
               + JS -> Contact form
@@ -51,19 +44,10 @@
         > Add burger menu
           > Theme switcher with daisy ui
           > Social Medias on mobile
-          > Site Content
+          > svg animation
 
     Aside bar
         > Social media links
-        > Hidden on mobile
-        > Put in main with height 100% and put margin right on section container to width of Aside bar
-        > No burgerbutton
-        
-    Footer, Topbar
-        > Add backdrop blur after remake of aside and navbar
-    
-    Footer > navbar
-        > add button to show sections https://www.youtube.com/watch?v=GSPUUN4nDGE&ab_channel=Hyperplexed
         
     Remake portrait svg
         > Re-do svg
@@ -78,7 +62,6 @@
         > Animated elements 
           + JS -> Element animation
         > Hide scrollbar on overflow sections or make it pretty
-        > improve anime.js animations in sectionswitch.js
         > Add focus styling
 
 }
@@ -89,13 +72,14 @@
         > Add horizontal option for contact me
           > When user clicks on contact section, contact section switches horizontally
           > Disable scrolling/swiping on mobile
+        > Fix scrolling not working on margin of main
         > Add code to nav bar
           > Animate nav bar
         > Fix reloading for android & ios
     }
 
-    Site content animation => {
-        1. Decide to use popover, popup or something else
+    Database => {
+        Display everything with js database using export/import for all fillable content
     }
 
     Element animation => {

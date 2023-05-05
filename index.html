@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="h-screen" style="height: 100dvh;">
+<body class="h-screen" style="height: 100dvh;" data-nav="false">
     <!-- Site Container -->
     <div class="h-full w-full flex flex-col overflow-hidden bg-gradient-to-br from-slate-800 to-slate-950">
-        <header class="flex flex-row justify-between p-6 z-10">
+        <header class="flex flex-row justify-between p-6 z-10 backdrop-blur-lg">
             <h1 class="text-2xl text-white">Justin Kousemaker</h1>
-            <aside class="md:h-full flex md:flex-col justify-center gap-4 md:px-6 lg:px-10 md:fixed top-0 bottom-0 left-0 fill-white">
-                <div class="hidden md:block w-10 h-auto">
+            <div class="w-10 h-auto flex items-center md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M0,4c0-.55,.45-1,1-1H18c.55,0,1,.45,1,1s-.45,1-1,1H1c-.55,0-1-.45-1-1Zm18,15H1c-.55,0-1,.45-1,1s.45,1,1,1H18c.55,0,1-.45,1-1s-.45-1-1-1Zm5-8H6c-.55,0-1,.45-1,1s.45,1,1,1H23c.55,0,1-.45,1-1s-.45-1-1-1Z"/></svg>
+            </div>
+        </header>
+         <!-- Sections Container -->
+        <main class="flex-1 min-h-0 relative">
+            <aside class="absolute h-full hidden md:flex justify-center items-center flex-col gap-5 p-6 left-0">
+                <div class="w-10 h-auto">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"><path d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z"/></svg>
                 </div>
-                <div class="hidden md:block w-10 h-auto">
+                <div class="w-10 h-auto">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
                         <g>
                             <path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"/>
@@ -25,13 +32,8 @@
                         </g>
                     </svg>
                 </div>
-                <div class="w-10 h-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M0,4c0-.55,.45-1,1-1H18c.55,0,1,.45,1,1s-.45,1-1,1H1c-.55,0-1-.45-1-1Zm18,15H1c-.55,0-1,.45-1,1s.45,1,1,1H18c.55,0,1-.45,1-1s-.45-1-1-1Zm5-8H6c-.55,0-1,.45-1,1s.45,1,1,1H23c.55,0,1-.45,1-1s-.45-1-1-1Z"/></svg>
-                </div>
+
             </aside>
-        </header>
-         <!-- Sections Container -->
-        <main class="flex-1 min-h-0 relative">
                 <section id="section1" class="h-full w-full flex flex-col sm:flex-row justify-center p-4 md:p-0 absolute hidden">
                         <svg  class="" viewBox="71.257 95.809 217.366 224.55" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
                             <path class="morph" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" d="M 217.268 309.044 C 175.793 320.254 115.824 308.67 89.941 271.954 C 64.058 235.239 72.261 173.393 104.061 136.958 C 135.862 100.523 191.26 89.499 228.634 109.211 C 266.008 128.924 285.357 179.373 283.541 221.6 C 281.725 263.827 258.743 297.833 217.268 309.044" bx:d="M 235.761 331.839 U 55.856 297.085 U 80.463 111.547 U 246.659 78.475 U 304.706 229.821 Z 1@67cf325c"/>
@@ -57,7 +59,7 @@
                             </div>
                         </div>
                 </section>
-                <section id="section2" class="s-timeline h-full w-full flex flex-col items-center p-4 md:p-0 absolute">
+                <section id="section2" class="s-timeline h-full w-full flex flex-col items-center p-4 md:p-0 absolute hidden">
                     <h1 class="text-7xl font-bold text-white sticky mb-3">Timeline</h1>
                     <!-- Timeline Container -->
                     <div class="flex flex-col flex-1 py-6 overflow-y-auto">
@@ -130,11 +132,11 @@
                                             <!-- Content Item Expand Button -->
                                             <div class="flex flex-row gap-4 fill-white text-white">
                                                 <!-- Content Item Expand Svg -->
-                                                <div class="flex justify-center ">
-                                                    <svg class="w-9 group-hover:scale-125 group-focus-within:group-hover:scale-100 group-focus-within:rotate-180 z-0 group-focus-within:z-50 group-focus-within:hover:-translate-y-2 transition-all cursor-pointer" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm4.913,13.35l-4.361,4.418c-.305,.309-.799,.309-1.104,0l-4.361-4.418c-.492-.498-.143-1.35,.552-1.35h3.361V7c0-.552,.448-1,1-1s1,.448,1,1v5h3.361c.695,0,1.044,.852,.552,1.35Z"/></svg>
+                                                <div class="flex justify-center">
+                                                    <svg class="w-9 group-hover:scale-125 group-focus-within:group-hover:scale-90 group-focus-within:rotate-180 z-0 group-focus-within:z-50 transition-all cursor-pointer after:border-2 after:block after:absolute after:h-full after:w-full after:border-black" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm4.913,13.35l-4.361,4.418c-.305,.309-.799,.309-1.104,0l-4.361-4.418c-.492-.498-.143-1.35,.552-1.35h3.361V7c0-.552,.448-1,1-1s1,.448,1,1v5h3.361c.695,0,1.044,.852,.552,1.35Z"/></svg>
                                                 </div>
                                                 <h3 class="text-2xl">
-                                                    Started my first year in college as a Software Developer
+                                                    Started my first year in college as a Software Developeeer
                                                 </h3>
                                             </div>
                                             
@@ -234,41 +236,82 @@
                         </div>
                     </div>
                 </section>
-                <section id="section3" class="h-full w-full flex justify-center p-4 md:p-0 absolute hidden overflow-y-auto">
+                <section id="section3" class="s-projects h-full w-full flex flex-col items-center p-4 md:p-0 absolute">
+                    <h1 class="text-7xl font-bold text-white sticky mb-3">Projects</h1>
+                    <!-- Projects Container -->
+                    <div class="flex flex-col justify-center items-center w-full flex-1 py-6 overflow-hidden">
+                        <!-- Folder Group -->
+                        <div class="folder group/folder overflow-hidden p-5 pb-0">
+                            <!-- Cards Group -->
+                            <div class="group/cards -mb-52 group-hover/folder:-mb-44 group-hover/folder:hover:-mb-20 h-56 z-10 relative transition-all">
+                                <div class="flex justify-center relative h-full w-full">
+                                    <div class="-translate-x-[15%] group-hover/folder:-translate-x-[33%] group-hover/folder:group-hover/cards:-translate-x-[45%] -rotate-6 bg-red-500 w-44 h-full absolute opacity-50"></div>
+                                    <div class="-translate-x-[10%] group-hover/folder:-translate-x-[15%] group-hover/folder:group-hover/cards:-translate-x-[15%] -rotate-2 bg-blue-500 w-44 h-full absolute opacity-25"></div>
+                                    <div class="translate-x-[10%] group-hover/folder:translate-x-[15%] group-hover/folder:group-hover/cards:translate-x-[15%] rotate-2 bg-red-500 w-44 h-full absolute opacity-50"></div>
+                                    <div class="translate-x-[15%] group-hover/folder:translate-x-[33%] group-hover/folder:group-hover/cards:translate-x-[45%] rotate-6 bg-blue-500 w-44 h-full absolute opacity-25"></div>
+                                </div>
+                            </div>
+                            <!-- Folder Svg Container -->
+                            <div class="relative w-full">
+                                <svg class="overflow-visible w-full" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 160 90" style="enable-background:new 0 0 160 90;" xml:space="preserve">
+                                        <path class="fill-white stroke-black" d="M7,89.5c-3.6,0-6.5-2.9-6.5-6.5V7c0-3.6,2.9-6.5,6.5-6.5H39c3.6,0,6.5,2.9,6.5,6.5v5.4
+                                            c0,4.1,3.4,7.5,7.5,7.5h100c3.6,0,6.5,2.9,6.5,6.5V83c0,3.6-2.9,6.5-6.5,6.5H7z"/>
+                                </svg>
+                                <svg class="overflow-visible w-full absolute top-0 z-50" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 160 90" style="enable-background:new 0 0 160 90;" xml:space="preserve">
+                                        <path class="foldable-folder fill-white stroke-black" d="M7,89.5c-3,0-5.2-2.2-6.5-6.6l0.1-52c-0.3-1.7-0.1-3.3,0.7-4.5c1.2-2,3.3-3.2,5.6-3.2h146.2
+                                        c2.3,0,4.5,1.2,5.6,3.2c0.7,1.2,1,2.8,0.7,4.4l0.1,52.1c-1.3,4.4-3.5,6.6-6.5,6.6H7z"/>
+                                </svg>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </section>
+                <section id="section4" class="h-full w-full flex justify-center p-4 md:p-0 absolute hidden overflow-y-auto">
                     <h1 class="text-7xl font-bold text-white">TEST</h1>
                 </section>
         </main>
         <!-- Nav & Footer Container -->
-        <div class="c-bottom z-10">
-            <nav class="flex flex-row justify-center gap-2 sm:gap-5 md:gap-10 lg:gap-20 p-4">
-                <div id="1" class="w-14 shrink nav-link cursor-pointer text-center text-white">
-                    <div class="p-3 border-2 rounded-full">
-                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"><path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/></svg>
+        <div class="c-bottom z-10 backdrop-blur-lg">
+            <nav class="p-6 flex justify-center">
+                <div class="c-navbut group/navbutwrap relative flex justify-center items-center">
+                    <button class="group-hover/navbutwrap:scale-125 group-active/navbutwrap:active:scale-95 group/navbut z-50 w-16 h-16 bg-orange-400 rounded-full cursor-pointer transition-all duration-300 outline-none" onclick="toggleNav()" type="button">
+                        <div class="nav-icons relative flex justify-center items-center w-full h-full scale-75 transition-all duration-200 group-hover/navbut:scale-100">
+                            <i class="nav-open fa-solid fa-ellipsis fa-shake absolute text-4xl opacity-0 transition-all duration-200"></i>
+                            <i class="nav-close fa-solid fa-xmark absolute text-4xl opacity-0 transition-all duration-200"></i>
+                        </div>
+                    </button>
+                    <div class="group-hover/navbutwrap:scale-150 nav-buttons z-10 w-16 h-16 rounded-full bg-black absolute transition-all duration-300">
+                        <div class="h-full w-full nav-link-container scale-50 relative text-white flex justify-center items-center">
+                            <div class="nav-link absolute underline" id="1"><i class="fa-solid fa-house text-2xl"></i></div>
+                            <div class="nav-link absolute underline" id="2"><i class="fa-solid fa-book-open text-2xl"></i></div>
+                            <div class="nav-link absolute underline" id="3"><i class="fa-solid fa-list-check text-2xl"></i></div>
+                            <div class="nav-link absolute underline" id="4"><i class="fa-solid fa-address-book text-2xl"></i></div>
+                        </div>
                     </div>
-                    <p>Home</p>
-                </div>
-                <div id="2" class="w-14 shrink nav-link cursor-pointer text-center text-white">
-                    <div class="p-3 border-2 rounded-full">
-                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"><path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/></svg>
+                    <div class="z-20 navbut-text absolute font-thin font-serif text-white flex flex-row gap-1 cursor-default select-none">
+                        <p class="-rotate-[25deg] translate-y-2">M</p>
+                        <p class="rotate-6 translate-y-px">e</p>
+                        <p class="rotate-12 translate-y-1">n</p>
+                        <p class="rotate-45 translate-y-3">u</p>
                     </div>
-                    <p>Timeline</p>
+                    
                 </div>
-                <div id="3" class="w-14 shrink nav-link cursor-pointer text-center text-white">
-                    <div class="p-3 border-2 rounded-full">
-                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"><path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/></svg>
-                    </div>
-                    <p>Test</p>
-                </div>
+                
             </nav>
 
-            <footer class="flex justify-center items-center overflow-hidden bg-white text-black text-2xl font-bold text-center" style="height: 0;">
+            <footer class="flex justify-center items-center overflow-hidden bg-white text-black text-2xl font-bold text-center relative z-50" style="height: 0;">
                 <p>&copy; Justin Kousemaker 2023</p>
             </footer>
         </div>
     </div>
-    <script src="anime.min.js"></script>
-    <script src="svgAnimation.js"></script>
-    <script src="sectionSwitch.js"></script>
-    <script src="responsiveMargin.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/svgAnimation.js"></script>
+    <script src="js/folderAnimation.js"></script>
+    <script src="js/sectionSwitch.js"></script>
+    <script src="js/responsiveMargin.js"></script>
+    <script src="js/navButton.js"></script>
+    <script src="https://kit.fontawesome.com/37c3c29385.js" crossorigin="anonymous"></script>
 </body>
 </html>
