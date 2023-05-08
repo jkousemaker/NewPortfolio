@@ -22,4 +22,9 @@ body[data-nav="true"] > div > .c-bottom > nav > .c-navbut:not(:hover) > .navbut-
 
 body[data-nav="true"] > div > .c-bottom > nav > .c-navbut:hover > .navbut-text  {
     transition: all .3s ease-out;
+    padding: 0px;
+}
+
+.navbut-text {
+    transition: padding .3s ease-out;
 }

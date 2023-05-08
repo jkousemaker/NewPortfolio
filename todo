@@ -48,6 +48,7 @@
 
     Aside bar
         > Social media links
+        > styling https://zaptine.com/
         
     Remake portrait svg
         > Re-do svg
@@ -63,6 +64,7 @@
           + JS -> Element animation
         > Hide scrollbar on overflow sections or make it pretty
         > Add focus styling
+        > Add focus for animations/interactive elements
 
 }
 
