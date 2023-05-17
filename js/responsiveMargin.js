@@ -1,11 +1,12 @@
 //Static Website Elements
 const aside = document.querySelector("aside");
 
-//Timeline Section Elements
-const timelinesDateYear = document.querySelectorAll(".date-year");
-const timelinesDateDot = document.querySelectorAll(".date-dot");
-
 function update() {
+  const topbarStyle = document.querySelector("header");
+  const dropdownMenu = document.querySelector(".c-dropdown");
+
+  dropdownMenu.style.marginTop = topbarStyle.offsetHeight + "px";
+
   // Get the computed style of the aside element
   const asideStyle = window.getComputedStyle(aside);
 
@@ -19,14 +20,6 @@ function update() {
         // Reset the padding top and bottom of the aside element
         sections[i].style.marginInline = '';
       }
-  }
-
-
-  /* Timeline Section */
-  console.log(timelinesDateYear.length);
-  for(let i = 0; i < timelinesDateYear.length; i++) {
-    timelinesDateDot[i].style.height = timelinesDateYear[i].offsetHeight + "px";
-    
   }
 }
 

@@ -75,8 +75,9 @@
           > When user clicks on contact section, contact section switches horizontally
           > Disable scrolling/swiping on mobile
         > Fix scrolling not working on margin of main
-        > Add code to nav bar
-          > Animate nav bar
+        > Add links to nav bar
+          > Put sleep on button press that waits for animation to finish to prevents
+            animation glitches
         > Fix reloading for android & ios
     }
 

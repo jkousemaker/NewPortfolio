@@ -1,3 +1,15 @@
+body[data-burger="true"] > div > header > .c-burger-button > div  {
+    transform: translateX(-100%)!important;
+}
+
+body[data-burger="true"] > div > header > .c-burger-button:before  {
+    transform: rotate(40deg) scale(1.5);
+}
+
+body[data-burger="true"] > div > header > .c-burger-button:after  {
+    transform: rotate(-40deg) scale(1.5);
+}
+
 body[data-nav="true"] > div > .c-bottom > nav > .c-navbut > button > .nav-icons > .nav-close  {
     opacity: 1;
 }
@@ -28,3 +40,4 @@ body[data-nav="true"] > div > .c-bottom > nav > .c-navbut:hover > .navbut-text  
 .navbut-text {
     transition: padding .3s ease-out;
 }
+

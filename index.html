@@ -8,15 +8,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="h-screen" style="height: 100dvh;" data-nav="false">
+<body class="h-screen" style="height: 100dvh;" data-nav="false" data-burger="false">
     <!-- Site Container -->
-    <div class="h-full w-full flex flex-col overflow-hidden bg-gradient-to-br from-slate-800 to-slate-950">
-        <header class="flex flex-row justify-between p-6 z-10 backdrop-blur-sm">
+    <div class="h-full w-full flex flex-col overflow-hidden bg-gradient-to-br from-slate-800 to-slate-950 relative">
+        <header class="flex flex-row justify-between p-6 z-10 backdrop-blur-sm items-center">
             <h1 class="text-2xl text-white">Justin Kousemaker</h1>
-            <div class="w-10 h-auto flex items-center md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M0,4c0-.55,.45-1,1-1H18c.55,0,1,.45,1,1s-.45,1-1,1H1c-.55,0-1-.45-1-1Zm18,15H1c-.55,0-1,.45-1,1s.45,1,1,1H18c.55,0,1-.45,1-1s-.45-1-1-1Zm5-8H6c-.55,0-1,.45-1,1s.45,1,1,1H23c.55,0,1-.45,1-1s-.45-1-1-1Z"/></svg>
+            <div class="c-burger-button group w-8 h-8 relative flex items-center md:hidden hover:before:rotate-12 hover:after:-rotate-12 before:origin-left after:origin-left before:content-[''] before:bg-white before:w-full before:h-1/6 before:flex before:absolute before:top-0 after:content-[''] after:bg-white after:w-full after:h-1/6 after:flex after:absolute after:bottom-0 overflow-hidden cursor-pointer before:transition-all after:transition-all" onclick="toggleDropdown()">
+                <div class="group-hover:-translate-x-1/2 bg-white w-full h-1/6 transition-all">
+
+                </div>
             </div>
         </header>
+        <div class="c-dropdown absolute w-full h-0 overflow-hidden top-0 left-0 transition-all bg-red-600 z-50 ">
+            <h1>Hello</h1>
+        </div>
          <!-- Sections Container -->
         <main class="flex-1 min-h-0 relative">
             <aside class="absolute h-full hidden md:flex justify-center items-center left-0 z-50">
@@ -59,31 +64,19 @@
                             </div>
                         </div>
                 </section>
-                <section id="section2" class="s-timeline h-full w-full flex flex-col items-center p-4 md:p-0 absolute hidden">
+                <section id="section2" class="s-timeline h-full w-full flex flex-col items-center p-4 md:p-0 absolute">
                     <h1 class="text-7xl font-bold text-white sticky mb-3">Timeline</h1>
                     <!-- Timeline Container -->
                     <div class="flex flex-col flex-1 py-6 overflow-y-auto">
                         <!-- Timeline Sections -->
-                        <div class="timeline flex flex-col sm:flex-row mb-6 gap-2 sm:gap-0">
+                        <div class="timeline flex flex-col sm:flex-row gap-2 sm:gap-0">
                             <!-- Timeline Section Date -->
-                            <div class="timeline-date flex flex-row items-start">
-                                <h2 class="date-year text-2xl font-bold text-white">2020</h2>
-                                <div class="date-indicators px-3 flex flex-col h-full">
-                                    <div class="date-dot flex justify-center items-center">
-                                        <svg class="" viewBox="0 0 10 10" width="15px">
-                                            <circle cx="5" cy="5" r="5" fill="white"/>
-                                        </svg>      
-                                    </div>
-                                                                    
-                                    <div class="flex-1 justify-center h-full hidden sm:flex">
-                                        <svg viewBox="0 0 10 100%" width="10px" height="100%">
-                                          <line x1="5" y1="0" x2="5" y2="100%" stroke="gray" stroke-width="3"/>
-                                        </svg>
-                                    </div>                                      
-                                </div>
+                            <div class="timeline-date flex flex-row sm:flex-col items-center me-5">
+                                <h2 class="date-year text-2xl font-bold text-white border-4 p-2 rounded-full">2020</h2>
+                                <div class="flex-1 h-2 sm:h-0 w-0 sm:w-2 bg-white"></div>
                             </div>
                             <!-- Timeline Section Content -->
-                            <div class="timeline-content flex-1 border-t-2 border-s-2 rounded-tl-xl overflow-hidden">
+                            <div class="timeline-content flex-1 border-t-2 border-s-2 rounded-tl-xl overflow-hidden mb-6">
                                 <ul class="list-none">
                                     <li class="relative group">
                                         <input type="checkbox" class="appearance-none cursor-pointer absolute w-full h-full z-10">
@@ -149,91 +142,7 @@
                             </div>
                             
                         </div>
-                        <div class="timeline flex flex-col sm:flex-row mb-6 gap-2 sm:gap-0">
-                            <!-- Timeline Section Date -->
-                            <div class="timeline-date flex flex-row items-start">
-                                <h2 class="date-year text-2xl font-bold text-white">2021</h2>
-                                <div class="date-indicators px-3 flex flex-col h-full">
-                                    <div class="date-dot flex justify-center items-center">
-                                        <svg class="" viewBox="0 0 10 10" width="15px">
-                                            <circle cx="5" cy="5" r="5" fill="white"/>
-                                        </svg>      
-                                    </div>
-                                                                    
-                                    <div class="flex-1 justify-center h-full hidden sm:flex">
-                                        <svg viewBox="0 0 10 100%" width="10px" height="100%">
-                                          <line x1="5" y1="0" x2="5" y2="100%" stroke="gray" stroke-width="3"/>
-                                        </svg>
-                                    </div>                                      
-                                </div>
-                            </div>
-                            <!-- Timeline Section Content -->
-                            <div class="timeline-content flex-1 border-t-2 border-s-2 rounded-tl-xl overflow-hidden">
-                                <ul class="list-none">
-                                    <li class="relative group">
-                                        <input type="checkbox" class="appearance-none cursor-pointer absolute w-full h-full z-10">
-                                        <!-- Content Item Expand Container -->
-                                        <div class="flex flex-col gap-4 p-4 group-hover:bg-white group-hover:bg-opacity-20">
-                                            <!-- Content Item Expand Button -->
-                                            <div class="flex flex-row gap-4 fill-white text-white">
-                                                <!-- Content Item Expand Svg -->
-                                                <div class="flex justify-center ">
-                                                    <svg class="w-9 group-hover:scale-125 group-focus-within:group-hover:scale-100 group-focus-within:rotate-180 z-0 group-focus-within:z-50 group-focus-within:hover:-translate-y-2 transition-all cursor-pointer" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm4.913,13.35l-4.361,4.418c-.305,.309-.799,.309-1.104,0l-4.361-4.418c-.492-.498-.143-1.35,.552-1.35h3.361V7c0-.552,.448-1,1-1s1,.448,1,1v5h3.361c.695,0,1.044,.852,.552,1.35Z"/></svg>
-                                                </div>
-                                                <h3 class="text-2xl">
-                                                    Started my first year in college as a Software Developer
-                                                </h3>
-                                            </div>
-                                            
-                                            <div class="w-full max-h-0 transition-all opacity-0 group-focus-within:opacity-100 group-focus-within:max-h-96 overflow-hidden">
-                                                <p>da</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="relative group">
-                                        <input type="checkbox" class="appearance-none cursor-pointer absolute w-full h-full z-10">
-                                        <!-- Content Item Expand Container -->
-                                        <div class="flex flex-col gap-4 p-4 group-hover:bg-white group-hover:bg-opacity-20">
-                                            <!-- Content Item Expand Button -->
-                                            <div class="flex flex-row gap-4 fill-white text-white">
-                                                <!-- Content Item Expand Svg -->
-                                                <div class="flex justify-center ">
-                                                    <svg class="w-9 group-hover:scale-125 group-focus-within:group-hover:scale-100 group-focus-within:rotate-180 z-0 group-focus-within:z-50 group-focus-within:hover:-translate-y-2 transition-all cursor-pointer" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm4.913,13.35l-4.361,4.418c-.305,.309-.799,.309-1.104,0l-4.361-4.418c-.492-.498-.143-1.35,.552-1.35h3.361V7c0-.552,.448-1,1-1s1,.448,1,1v5h3.361c.695,0,1.044,.852,.552,1.35Z"/></svg>
-                                                </div>
-                                                <h3 class="text-2xl">
-                                                    Started my first year in college as a Software Developer
-                                                </h3>
-                                            </div>
-                                            
-                                            <div class="w-full max-h-0 transition-all opacity-0 group-focus-within:opacity-100 group-focus-within:max-h-96 overflow-hidden">
-                                                <p>da</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="relative group">
-                                        <input type="checkbox" class="appearance-none cursor-pointer absolute w-full h-full z-10">
-                                        <!-- Content Item Expand Container -->
-                                        <div class="flex flex-col gap-4 p-4 group-hover:bg-white group-hover:bg-opacity-20">
-                                            <!-- Content Item Expand Button -->
-                                            <div class="flex flex-row gap-4 fill-white text-white">
-                                                <!-- Content Item Expand Svg -->
-                                                <div class="flex justify-center ">
-                                                    <svg class="w-9 group-hover:scale-125 group-focus-within:group-hover:scale-100 group-focus-within:rotate-180 z-0 group-focus-within:z-50 group-focus-within:hover:-translate-y-2 transition-all cursor-pointer" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"><path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm4.913,13.35l-4.361,4.418c-.305,.309-.799,.309-1.104,0l-4.361-4.418c-.492-.498-.143-1.35,.552-1.35h3.361V7c0-.552,.448-1,1-1s1,.448,1,1v5h3.361c.695,0,1.044,.852,.552,1.35Z"/></svg>
-                                                </div>
-                                                <h3 class="text-2xl">
-                                                    Started my first year in college as a Software Developer
-                                                </h3>
-                                            </div>
-                                            
-                                            <div class="w-full max-h-0 transition-all opacity-0 group-focus-within:opacity-100 group-focus-within:max-h-96 overflow-hidden">
-                                                <p>da</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </div>
+                        
                     </div>
                 </section>
                 <section id="section3" class="s-projects h-full w-full flex flex-col items-center p-4 md:p-0 absolute hidden">
@@ -268,9 +177,18 @@
                         </div>
                     </div>
                 </section>
-                <section id="section4" class="s-timeline h-full w-full flex flex-col items-center p-4 md:p-0 absolute">
+                <section id="section4" class="s-timeline h-full w-full flex flex-col items-center p-4 md:p-0 absolute hidden">
                     <h1 class="text-7xl font-bold text-white sticky mb-3">Skills</h1>
                     <!-- Skills Container -->
+                    <div class="flex flex-wrap justify-center items-center gap-10 flex-1 py-6">
+                        <div class="w-52 h-60 relative p-1">
+                            <div class="h-full w-full bg-gray-400 z-10 relative box-border rounded-2xl flex justify-center items-center gap-5 flex-col">
+                                <i class="text-5xl text-white fa-brands fa-square-js"></i>
+                                <p class="text-xl text-white font-bold text-center">Javascript dasfasfas dasfsa sf</p>
+                            </div>
+                            <div class="h-full w-full absolute box-content bg-gradient-to-r from-cyan-500 to-blue-500 z-0 top-0 left-0 rounded-2xl"></div>
+                        </div>                        
+                    </div>
                 </section>
                 <section id="section5" class="h-full w-full flex justify-center p-4 md:p-0 absolute hidden">
                     <h1 class="text-7xl font-bold text-white">Contact</h1>
@@ -280,7 +198,7 @@
         <div class="c-bottom z-10">
             <nav class="p-6 flex justify-center">
                 <div class="c-navbut group/navbutwrap relative flex justify-center items-center">
-                    <button class="group-hover/navbutwrap:scale-125 group-active/navbutwrap:active:scale-95 group/navbut z-50 w-16 h-16 bg-orange-400 rounded-full cursor-pointer transition-all duration-300 outline-none" onclick="toggleNav()" type="button">
+                    <button class="group-hover/navbutwrap:scale-125 group-active/navbutwrap:active:scale-95 group/navbut z-40 w-16 h-16 bg-orange-400 rounded-full cursor-pointer transition-all duration-300 outline-none" onclick="toggleNav()" type="button">
                         <div class="nav-icons relative flex justify-center items-center w-full h-full scale-75 transition-all duration-200 group-hover/navbut:scale-100">
                             <i class="nav-open fa-solid fa-ellipsis fa-shake absolute text-4xl opacity-0 transition-all duration-200"></i>
                             <i class="nav-close fa-solid fa-xmark absolute text-4xl opacity-0 transition-all duration-200"></i>
@@ -317,7 +235,7 @@
                 
             </nav>
 
-            <footer class="flex justify-center items-center overflow-hidden bg-white text-black text-2xl font-bold text-center relative z-50" style="height: 0;">
+            <footer class="flex justify-center items-center overflow-hidden bg-white text-black text-2xl font-bold text-center relative z-40" style="height: 0;">
                 <p>&copy; Justin Kousemaker 2023</p>
             </footer>
         </div>

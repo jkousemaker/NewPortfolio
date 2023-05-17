@@ -1,3 +1,16 @@
+const burgerButton = document.querySelector(".c-burger-button");
+const dropdownMenu = document.querySelector(".c-dropdown");
+
+const toggleDropdown = () => {
+    document.body.dataset.burger = document.body.dataset.burger === "true" ? "false" : "true";
+
+    if (document.body.dataset.burger === "true") {
+      dropdownMenu.style.height = "100vh";
+    } else {
+      dropdownMenu.style.height = "";
+    }
+};
+
 const navBut = document.querySelector(".c-navbut > button");
 const navButIndicator = document.querySelector(".navbut-text");
 const navButArrow = document.querySelector(".nav-arrow");
@@ -90,29 +103,3 @@ animeInstance = anime({
     autoplay: true,
     delay: 10000
 });
-
-
-/*document.onmousemove= mouseCoordinates;
-
-
-function mouseCoordinates(event){
-
-    if(document.body.dataset.nav != "true") {
-        return;
-    }
-
-    const arrowRect = navButArrow.getBoundingClientRect();
-    const arrowCenterX = arrowRect.left + arrowRect.width / 2;
-    const arrowCenterY = arrowRect.top + arrowRect.height / 2;
-    const deltaX = event.clientX - arrowCenterX;
-    const deltaY = event.clientY - arrowCenterY;
-    const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
-    const scale = Math.min(distance / 100, 1);
-    const scaledDeltaX = deltaX * scale;
-    const scaledDeltaY = deltaY * scale;
-    const angleInRadians = Math.atan2(scaledDeltaY, scaledDeltaX);
-    const angleInDegrees = angleInRadians * 180 / Math.PI;
-
-    navButArrow.style.transform = `translate(${scaledDeltaX}px, ${scaledDeltaY}px) rotate(${angleInDegrees}deg)`;
-}
-*/
